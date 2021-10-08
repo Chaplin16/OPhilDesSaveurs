@@ -7,11 +7,11 @@ html {
 }
 
 .bg-color {
-  background-color: #80bd31f5 !important;
+  background-color: #80bd31ee !important;
 }
 
 .text-color-main {
-  color: #80bd31f5 !important;
+  color: #80bd31ee !important;
 }
 
 .text-shadow {
@@ -20,6 +20,7 @@ html {
 
 .navbar {
   z-index: 5;
+  opacity: 1;
 }
 .navbar .navbar-toggler:hover {
   box-shadow: 0 0 0 0 #000 !important;
@@ -56,6 +57,30 @@ html {
   font-size: 0.8rem;
 }
 
+.homemade {
+  max-width: 95%;
+}
+
+p img {
+  max-width: 45%;
+  box-shadow: 1px 1px 5px #000;
+}
+p img.left {
+  float: left;
+}
+p img.right {
+  float: right;
+}
+
+@media all and (max-width: 350px) {
+  .navbar .navbar-brand {
+    font-size: 1rem !important;
+  }
+  .navbar .navbar-toggler {
+    padding-right: 0 !important;
+    font-size: 1rem;
+  }
+}
 @media all and (max-width: 495px) {
   .navbar .navbar-brand {
     font-size: 1.15rem !important;
@@ -78,13 +103,9 @@ html {
     margin-bottom: 0.8rem;
   }
 }
-@media all and (max-width: 350px) {
-  .navbar .navbar-brand {
-    font-size: 1rem !important;
-  }
-  .navbar .navbar-toggler {
-    padding-right: 0 !important;
-    font-size: 1rem;
+@media all and (min-width: 850px) {
+  .homemade {
+    max-width: 80%;
   }
 }
 

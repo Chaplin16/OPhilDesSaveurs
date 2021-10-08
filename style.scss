@@ -6,7 +6,7 @@ html{
     min-height: 100%!important;
 }
 
-$color-main: #80bd31f5;
+$color-main: #80bd31ee;
 
 .bg-color{
     background-color: $color-main!important;
@@ -21,6 +21,7 @@ $color-main: #80bd31f5;
 }
 .navbar{
     z-index: 5;
+    opacity:1;
     .navbar-toggler:hover{
         box-shadow: 0 0 0 0 #000!important;
         outline:0!important;
@@ -58,6 +59,34 @@ $color-main: #80bd31f5;
     }
 }
 
+//page HOMEMADE.HTML 
+.homemade{
+    max-width: 95%;
+}
+//images dans le texte
+p img{
+    max-width: 45%;
+    box-shadow: 1px 1px 5px #000;
+    &.left{
+        float: left;
+    }
+    &.right{
+        float: right;
+    }
+}
+
+@media all and (max-width: 350px){
+    .navbar {
+        .navbar-brand{
+            font-size: 1rem!important;
+        }
+        .navbar-toggler{
+            padding-right: 0!important;
+            font-size: 1rem;
+        }
+    }
+}
+
 @media all and (max-width: 495px){
     .navbar {
         .navbar-brand{
@@ -83,14 +112,9 @@ $color-main: #80bd31f5;
     }
 }
 
-@media all and (max-width: 350px){
-    .navbar {
-        .navbar-brand{
-            font-size: 1rem!important;
-        }
-        .navbar-toggler{
-            padding-right: 0!important;
-            font-size: 1rem;
-        }
+
+@media all and (min-width: 850px){
+    .homemade{
+        max-width: 80%;
     }
 }
