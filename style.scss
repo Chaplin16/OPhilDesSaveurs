@@ -52,7 +52,7 @@ $color-main: #80bd31ee;
         line-height: 1rem;;
     }
     & a:hover{
-        color:rgb(255, 211, 211)!important;
+        color:rgb(197, 2, 214)!important;
     }
     .size{
         font-size:0.8rem;;
@@ -119,13 +119,37 @@ p img{
         & img{
             margin-bottom: 0.8rem;
         }
-
     }
 }
 
-
-@media all and (min-width: 850px){
+@media all and (min-width: 750px){
     .homemade{
         max-width: 80%;
+    }
+    .info{
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 4rem;
+        img{
+            width:20rem;
+            height: auto;
+        }
+    }
+    .footer{
+        flex-direction: row;
+        line-height: 1;
+        & .copyright, 
+        & .law{
+            font-size: 0.7rem;
+        }
+        & .size{
+            padding-top: 0.8rem;
+        }
+    }
+}
+
+@media all and (min-width: 1000px){
+    .info img{
+        width: 30rem;
     }
 }
