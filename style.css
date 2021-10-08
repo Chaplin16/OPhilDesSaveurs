@@ -72,6 +72,15 @@ p img.right {
   float: right;
 }
 
+.info {
+  flex-direction: column;
+}
+.info img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 @media all and (max-width: 350px) {
   .navbar .navbar-brand {
     font-size: 1rem !important;
@@ -83,7 +92,7 @@ p img.right {
 }
 @media all and (max-width: 495px) {
   .navbar .navbar-brand {
-    font-size: 1.15rem !important;
+    font-size: 1.15rem;
     margin-right: 0 !important;
   }
   .navbar .navbar-toggler {

@@ -63,6 +63,7 @@ $color-main: #80bd31ee;
 .homemade{
     max-width: 95%;
 }
+
 //images dans le texte
 p img{
     max-width: 45%;
@@ -72,6 +73,16 @@ p img{
     }
     &.right{
         float: right;
+    }
+}
+
+//page CONTACT.HTML
+.info{
+    flex-direction: column;
+    img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
 }
 
@@ -90,7 +101,7 @@ p img{
 @media all and (max-width: 495px){
     .navbar {
         .navbar-brand{
-            font-size: 1.15rem!important;
+            font-size: 1.15rem;
             margin-right: 0!important;
         }
         .navbar-toggler{
