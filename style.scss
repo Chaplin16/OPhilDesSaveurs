@@ -23,12 +23,12 @@ $color-main: #80bd31f5;
     z-index: 5;
 }
 
-h2{
-    padding-top: 5rem;
+.title{
+    padding-top: 1rem!important;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    & ~ img{
+    & img{
         width: 3rem;
-        height: 4rem;
+        height:6.5rem;
     }
 }
 
@@ -47,9 +47,47 @@ h2{
         line-height: 1rem;;
     }
     & a:hover{
-        color:#fff!important;
+        color:rgb(255, 211, 211)!important;
     }
     .size{
         font-size:0.8rem;;
+    }
+}
+
+@media all and (max-width: 495px){
+    .navbar {
+        .navbar-brand{
+            font-size: 1.15rem!important;
+            margin-right: 0!important;
+        }
+        .navbar-toggler{
+            box-shadow: 0 0 0 0 #000!important;
+            padding: 0;
+            padding-right:0.5rem!important;
+        }
+    }
+    .title{
+      align-items: flex-end!important;
+      column-gap:0.8rem;
+      margin-left:15%!important;
+        h2{
+            padding-top: 3rem!important;
+        }
+        & img{
+            margin-bottom: 0.8rem;
+        }
+
+    }
+}
+
+@media all and (max-width: 350px){
+    .navbar {
+        .navbar-brand{
+            font-size: 1rem!important;
+        }
+        .navbar-toggler{
+            padding-right: 0!important;
+            font-size: 1rem;
+        }
     }
 }

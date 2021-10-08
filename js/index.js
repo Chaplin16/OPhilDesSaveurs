@@ -13,8 +13,18 @@ function carousel(selector, data) {
         adaptiveHeight: true,
         autoplaySpeed:1200,
         autoplay: true,
-        responsive: [{
-                breakpoint: 1300,
+        responsive: [
+            {
+                breakpoint: 1500,
+                settings: {
+                    arrows: true,
+                    centerMode: true,
+                    centerPadding: '0px',
+                    slidesToShow: 4
+                }
+           },
+            {
+                breakpoint: 1200,
                 settings: {
                     arrows: true,
                     centerMode: true,
