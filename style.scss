@@ -21,6 +21,10 @@ $color-main: #80bd31f5;
 }
 .navbar{
     z-index: 5;
+    .navbar-toggler:hover{
+        box-shadow: 0 0 0 0 #000!important;
+        outline:0!important;
+    }
 }
 
 .title{
@@ -61,7 +65,6 @@ $color-main: #80bd31f5;
             margin-right: 0!important;
         }
         .navbar-toggler{
-            box-shadow: 0 0 0 0 #000!important;
             padding: 0;
             padding-right:0.5rem!important;
         }

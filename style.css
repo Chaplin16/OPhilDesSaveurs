@@ -21,6 +21,10 @@ html {
 .navbar {
   z-index: 5;
 }
+.navbar .navbar-toggler:hover {
+  box-shadow: 0 0 0 0 #000 !important;
+  outline: 0 !important;
+}
 
 .title {
   padding-top: 1rem !important;
@@ -58,7 +62,6 @@ html {
     margin-right: 0 !important;
   }
   .navbar .navbar-toggler {
-    box-shadow: 0 0 0 0 #000 !important;
     padding: 0;
     padding-right: 0.5rem !important;
   }
