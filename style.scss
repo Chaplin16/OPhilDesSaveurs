@@ -19,6 +19,9 @@ $color-main: #80bd31f5;
 .text-shadow{
     text-shadow:2px 1px 3px #000;
 }
+.navbar{
+    z-index: 5;
+}
 
 h2{
     padding-top: 5rem;
@@ -29,6 +32,13 @@ h2{
     }
 }
 
+//carrousel de photos//
+.card-img img{
+    width: 100%;
+    height: 18rem;
+    border:transparent;
+    object-fit: cover;
+}
 
 .footer{
     flex-direction: column;
