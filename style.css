@@ -22,7 +22,8 @@ html {
   z-index: 5;
   opacity: 1;
 }
-.navbar .navbar-toggler:hover {
+.navbar .navbar-toggler:hover,
+.navbar .navbar-toggler:focus {
   box-shadow: 0 0 0 0 #000 !important;
   outline: 0 !important;
 }
