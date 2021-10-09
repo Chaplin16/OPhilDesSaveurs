@@ -1,3 +1,14 @@
+@charset "UTF-8";
+@keyframes scrolling {
+  0% {
+    transform: translate3d(0, 0, 0);
+    /* position initiale à droite */
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+    /* position finale à gauche */
+  }
+}
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -35,6 +46,30 @@ html {
 .title img {
   width: 3rem;
   height: 6.5rem;
+}
+
+.scrolling_menu {
+  max-width: 80%;
+  margin: 1.5em auto 2em;
+  border: 1px solid #000;
+  overflow: hidden;
+  background-color: rgba(128, 189, 49, 0.333);
+  font-size: 1.3rem;
+  box-shadow: 0 0.1em 0.25em #000;
+}
+.scrolling_menu > :first-child {
+  display: inline-block;
+  padding-right: 2em;
+  padding-left: 100%;
+  white-space: nowrap;
+  animation: scrolling 45s infinite linear;
+}
+.scrolling_menu .scrolling_title {
+  font-weight: 700;
+}
+.scrolling_menu .bullets {
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 .card-img img {

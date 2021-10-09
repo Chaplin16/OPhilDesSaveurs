@@ -1,3 +1,14 @@
+//animation //
+@keyframes scrolling {
+    0% {
+        transform: translate3d(0,0,0);      /* position initiale à droite */
+    }
+    100% {
+        transform: translate3d(-100%,0,0);  /* position finale à gauche */
+    }
+}
+// css
+
 html{
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -19,6 +30,7 @@ $color-main: #80bd31ee;
 .text-shadow{
     text-shadow:2px 1px 3px #000;
 }
+
 .navbar{
     z-index: 5;
     opacity:1;
@@ -37,6 +49,32 @@ $color-main: #80bd31ee;
         height:6.5rem;
     }
 }
+
+// menu defilant
+.scrolling_menu{
+    max-width: 80%;
+    margin: 1.5em auto 2em;
+    border: 1px solid #000;
+    overflow: hidden;
+    background-color: rgba(128, 189, 49, 0.333);
+    font-size: 1.3rem;
+    box-shadow: 0 .1em .25em  #000;
+    &> :first-child {
+        display: inline-block;
+        padding-right: 2em;
+        padding-left: 100%;
+        white-space: nowrap;
+        animation: scrolling 45s infinite linear;
+    }
+    .scrolling_title{
+        font-weight: 700;
+    }
+    .bullets{
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+}
+
 
 //carrousel de photos//
 .card-img img{
