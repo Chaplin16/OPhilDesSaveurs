@@ -64,18 +64,6 @@ $color-main: #80bd31ee;
     max-width: 95%;
 }
 
-//images dans le texte
-p img{
-    max-width: 45%;
-    box-shadow: 1px 1px 5px #000;
-    &.left{
-        float: left;
-    }
-    &.right{
-        float: right;
-    }
-}
-
 //page CONTACT.HTML
 .info{
     flex-direction: column;
@@ -95,6 +83,9 @@ p img{
             padding-right: 0!important;
             font-size: 1rem;
         }
+    }
+    .exception {
+        margin: 01rem!important;
     }
 }
 

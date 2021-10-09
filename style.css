@@ -61,17 +61,6 @@ html {
   max-width: 95%;
 }
 
-p img {
-  max-width: 45%;
-  box-shadow: 1px 1px 5px #000;
-}
-p img.left {
-  float: left;
-}
-p img.right {
-  float: right;
-}
-
 .info {
   flex-direction: column;
 }
@@ -88,6 +77,10 @@ p img.right {
   .navbar .navbar-toggler {
     padding-right: 0 !important;
     font-size: 1rem;
+  }
+
+  .exception {
+    margin: 1rem !important;
   }
 }
 @media all and (max-width: 495px) {
