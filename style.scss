@@ -39,6 +39,15 @@ $color-main: #80bd31ee;
         box-shadow: 0 0 0 0 #000!important;
         outline:0!important;
     }
+    .nav-link{
+        transition: all .3s ease-out;
+        &:hover{
+            color: $color-main!important;
+            text-shadow: 0 0 0 #000;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+    }
 }
 
 .title{
@@ -175,6 +184,12 @@ $color-main: #80bd31ee;
         & .size{
             padding-top: 0.8rem;
         }
+    }
+}
+
+@media all and (max-width: 992px){
+    .nav-link{
+        padding-left: 1rem!important;
     }
 }
 
